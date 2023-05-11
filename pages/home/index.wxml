@@ -1,0 +1,8 @@
+<view class="wrapper">
+  <view class="avatar">
+    <block wx:if="{{ isLogin }}">{{  employee.name }}</block>
+    <block wx:else>
+      <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取名片</button>
+    </block>
+  </view>
+</view>

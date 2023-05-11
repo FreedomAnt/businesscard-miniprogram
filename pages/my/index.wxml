@@ -1,0 +1,32 @@
+<view class='wrapper'>
+  <view class="user">
+    <!-- <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      <image class="avatar" src="{{avatarUrl}}"></image>
+    </button>
+    <input type="nickname" class="weui-input" placeholder="请输入昵称" bind:input="onChangeNickName" /> -->
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"></button>
+    <!-- <view class="headUrl">
+      <block wx:if="{{ status == 200 }}">
+        <block wx:if="{{information.headImg}}">
+          <image bindtap="edit" data-userInfo="{{ information }}" mode="scaleToFill" src="{{ http + information.headImg }}" />
+        </block>
+        <block wx:else>
+          <image bindtap="edit" data-userInfo="{{ information }}" mode="scaleToFill" src="../../resources/images/user_unlogin.png" />
+        </block>
+        <view class="user_Nickname">
+          <view class="nickname">{{ information.name? information.name : '' }}</view>
+        </view>
+      </block>
+      <block wx:if="{{ status == 50505 }}">
+        <image mode="scaleToFill" src="../../resources/images/user_unlogin.png" />
+        <view bindtap="modalFrame" class="name">注册 / 登录</view>
+      </block>
+    </view>
+    <view class="age" wx:if="{{ status == 200 }}">
+      <view style="font-weight: 700; font-size: 40rpx;">
+        {{ information.age? information.age : '' }}
+      </view>
+      <view>年龄</view>
+    </view> -->
+  </view>
+</view>

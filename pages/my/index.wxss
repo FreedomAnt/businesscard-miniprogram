@@ -1,0 +1,234 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user {
+  width: 100%;
+  height: 30%;
+  padding: 10% 40rpx 0rpx 40rpx;
+  box-sizing: border-box;
+  background-color: #eff1fa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headUrl {
+  width: 75%;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.headUrl image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  object-fit: cover;
+}
+
+.name {
+  margin-left: 20rpx;
+  width: calc(100% - 140rpx);
+}
+
+.user_Nickname {
+  margin-left: 20rpx;
+  width: calc(100% - 140rpx);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nickname {
+  font-size: #fff;
+  font-weight: 700;
+}
+
+.gender {
+  text-align: center;
+  width: 45%;
+  background-color: #fff;
+  padding: 5rpx 10rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  font-size: 22rpx;
+}
+
+.age {
+  width: 20%;
+  height: 120rpx;
+  border: 1rpx solid #000;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userInfo {
+  width: 100%;
+  height: 60%;
+  padding: 0rpx 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.type {
+  position: absolute;
+  top: -30%;
+  width: 89.7%;
+  height: 25%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  padding: 30rpx 0rpx 20rpx 0;
+  box-sizing: border-box;
+}
+
+.type view {
+  width: 23.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26rpx;
+}
+
+.type view image {
+  width: 58rpx;
+  height: 58rpx;
+  margin-bottom: 20rpx;
+}
+
+.top_userInfo {
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin: 20rpx 0 40rpx 0;
+  width: 100%;
+  color: #666;
+  font-weight: 700;
+  font-size: 40rpx;
+}
+
+.btns {
+  width: 100%;
+  height: 15%;
+  background-color: #fff;
+  border-radius: 10rpx 10rpx 0 0;
+  font-weight: 700;
+}
+
+.btns .van-button {
+  width: 100%;
+  height: 100% !important;
+  border-radius: 10rpx 10rpx 0 0 !important;
+}
+
+.phone {
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.phone image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+
+.phone .left {
+  width: 60%;
+}
+
+.phone .left image {
+  margin-right: 10rpx;
+}
+
+.phone .right {
+  display: flex;
+  align-items: center;
+}
+
+.importValue {
+  width: 100%;
+  height: 100%;
+}
+
+.inputValue {
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  overflow: hidden;
+  position: relative;
+  width: 94%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.inputValue text {
+  width: 150rpx;
+}
+
+.inputValue input {
+  margin-left: 50rpx;
+  width: calc(100% - 150rpx);
+}
+
+.van-checkbox__icon--checked {
+  background-color: #00b8ef;
+  border-color: #00b8ef;
+}
+
+.btn {
+  position: fixed;
+  width: 100%;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  padding: 0 0rpx 0 20rpx;
+  box-sizing: border-box;
+}
+
+.btn1.van-button--normal {
+  background-color: #ccc;
+  border-radius: 12rpx;
+  padding: 0 100rpx;
+}
+
+.btn2.van-button--normal {
+  margin-right: 20rpx;
+  background-color: #00b8ef;
+}
