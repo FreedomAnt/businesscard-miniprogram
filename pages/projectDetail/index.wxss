@@ -1,0 +1,53 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-back image {
+  width: 100%;
+  height: 100%;
+}
+
+.p-title {
+  padding-left: 60rpx;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #ffffff;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.p-sw {
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  width: 670rpx;
+  height: 500rpx;
+}
+
+.p-profile {
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+  width: 670rpx;
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 48rpx;
+}
+
+.p-divider {
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  width: 670rpx;
+}
+
+.bottom-tips {
+  height: 34rpx;
+  font-size: 24rpx;
+  color: #999999;
+  align-self: center;
+  margin-bottom: 60rpx;
+}

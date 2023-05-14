@@ -1,8 +1,99 @@
 <view class="wrapper">
-  <view class="avatar">
-    <block wx:if="{{ isLogin }}">{{  employee.name }}</block>
-    <block wx:else>
-      <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取名片</button>
+  <view class="back-img" style="background-color:{{isLogin===1? '#003086':'transparent'}};">
+    <image src="../../resources/images/bgimg.png" mode="widthFix" />
+  </view>
+  <view class="employee">
+    <van-sticky bind:scroll="onSticky">
+      <view wx:if="{{isLogin===1}}" style="background-color: {{stickyBgColor}};">
+        <view class="e-name">{{employee.name}}</view>
+        <view class="e-position">
+          {{department.name? department.name+'·' : ''}}{{employee.position}}
+        </view>
+      </view>
+    </van-sticky>
+    <block wx:if="{{isLogin===1}}">
+      <view class="e-phone">
+        <view class="e-phone-icon">
+          <image src="../../resources/images/icon_phone.png" />
+        </view>
+        <view class="e-phone-num">{{employee.phonenumber}}</view>
+      </view>
+      <view class="e-avatar">
+        <image src="{{imgUrl + employee.avatar}}" />
+      </view>
+      <view class="e-title">
+        <view class="e-title-icon">
+          <image src="../../resources/images/icon_v.png" />
+        </view>
+        <text class="e-title-txt">{{employee.title}}</text>
+      </view>
+      <view class="e-attr">
+        <view class="e-attr-icon">
+          <image src="../../resources/images/icon_email.png" />
+        </view>
+        <view class="e-attr-txt" bindtap="copyEmail">{{employee.email}}</view>
+      </view>
+      <view class="e-attr">
+        <view class="e-attr-icon">
+          <image src="../../resources/images/icon_url.png" />
+        </view>
+        <view class="e-attr-txt">{{company.website}}</view>
+      </view>
+      <view class="e-attr">
+        <view class="e-attr-icon">
+          <image src="../../resources/images/icon_address.png" />
+        </view>
+        <view class="e-attr-txt">{{company.address}}</view>
+      </view>
+      <view class="company">
+        <van-divider contentPosition="left">{{company.name}}</van-divider>
+      </view>
     </block>
   </view>
+  <block wx:if="{{isLogin===1}}">
+    <view class="project">
+      <view class="p-title1">RECOMMEND</view>
+      <view class="p-title2">推荐项目</view>
+      <view class="p-sw">
+        <block wx:for="{{projects}}" wx:key="id">
+          <view class="p-sw-item" bindtap="clickProject" data-project="{{ item }}">
+            <view class="p-item-img">
+              <image src="{{imgUrl + item.thumbnail}}" />
+            </view>
+            <view class="p-item-txt">{{item.name}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="tips">~期待您的联系~</view>
+    <view class="operate">
+      <view class="o-item" bindtap="makePhoneCall">
+        <view class="o-item-icon">
+          <image src="../../resources/images/icon_nav_phone.png" />
+        </view>
+        <view class="o-item-txt">电话联系</view>
+      </view>
+      <view class="o-item" bindtap="savePhoneCall">
+        <view class="o-item-icon">
+          <image src="../../resources/images/icon_nav_save.png" />
+        </view>
+        <view class="o-item-txt">保存至通讯录</view>
+      </view>
+    </view>
+    <view class="float-layer">
+      <van-button open-type="share" custom-style="padding: 0;border: transparent;height: 40rpx;">
+        <van-icon name="share" color="#003086" size="40rpx" />
+      </van-button>
+      <view class="line" />
+      <van-icon name="wap-home-o" color="#003086" size="40rpx" bindtap="clickHome" />
+    </view>
+  </block>
+  <block wx:elif="{{isLogin===2}}">
+    <van-button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" type="info" plain custom-class="businessButton">
+      获取名片
+    </van-button>
+  </block>
+  <block wx:else>
+    <van-loading color="#1989fa" size="24px" custom-class="load-div">加载中...</van-loading>
+  </block>
 </view>

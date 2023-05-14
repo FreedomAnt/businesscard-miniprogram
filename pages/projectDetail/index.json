@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-divider": "@vant/weapp/divider/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-empty": "@vant/weapp/empty/index"
+  }
+}

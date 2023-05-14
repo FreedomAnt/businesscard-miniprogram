@@ -1,0 +1,23 @@
+<view class='wrapper'>
+  <van-sticky>
+    <view class="p-title" wx:if="{{isLoad===1}}">{{project.name}}</view>
+  </van-sticky>
+  <swiper class="p-sw" wx:if="{{isLoad===1}}" indicator-dots indicator-active-color="#003086">
+    <block wx:for="{{project.pictures}}" wx:key="pictures">
+      <swiper-item>
+        <image src="{{imgUrl + item}}" style="width: 670rpx; height: 500rpx;" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <block wx:if="{{isLoad===1}}">
+    <text user-select class="p-profile">{{project.introduce}}</text>
+    <van-divider class="p-divider" />
+    <view class="bottom-tips">~已经到底啦~</view>
+  </block>
+  <block wx:elif="{{isLoad===2}}">
+    <van-loading color="#1989fa" size="24px" custom-class="load-div">加载中...</van-loading>
+  </block>
+  <block wx:else>
+    <van-empty description="暂无数据" />
+  </block>
+</view>

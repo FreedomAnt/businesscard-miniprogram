@@ -36,3 +36,14 @@ export function getInfoByPhoneNum(param) {
     data: param,
   });
 }
+
+/**
+ * 根据项目信息获取项目
+ * @param {Object} param 参数
+ */
+export function getProject(param) {
+  return request({
+    url: config.getProjectUrl,
+    data: param,
+  });
+}
