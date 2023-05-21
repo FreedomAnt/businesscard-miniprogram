@@ -4,7 +4,7 @@ export const env = "prod";
 // 接口地址
 const proxy = {
   local: "http://127.0.0.1:7001",
-  prod: "https://darsina.28xr.com/",
+  prod: "https://darsina.28xr.com",
 };
 
 export const config = {

@@ -6,6 +6,10 @@
   justify-content: space-between;
 }
 
+.van-button::before {
+  background-color: transparent !important;
+}
+
 .back-img {
   width: 750rpx;
   height: 300rpx;
@@ -53,23 +57,28 @@
   border-radius: 24rpx;
   border: 1rpx solid #4669a7;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .employee .e-phone .e-phone-icon {
-  margin: 4rpx;
   width: 40rpx;
   height: 40rpx;
   background-color: #ffffff;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .employee .e-phone .e-phone-icon image {
-  margin: 8rpx;
   width: 24rpx;
   height: 24rpx;
 }
 
 .employee .e-phone .e-phone-num {
+  width: 200rpx;
+  text-align: center;
   color: #ffffff;
   font-size: 28rpx;
   line-height: 48rpx;
@@ -171,6 +180,10 @@
   height: 580rpx;
   display: flex;
   overflow: scroll;
+}
+
+.project .p-sw::-webkit-scrollbar {
+  display: none;
 }
 
 .project .p-sw .p-sw-item {
