@@ -46,7 +46,10 @@
         <view class="e-attr-txt">{{company.address}}</view>
       </view>
       <view class="company">
-        <van-divider contentPosition="left">{{company.name}}</van-divider>
+        <view class="c-line"></view>
+        <view class="c-name">{{company.name}}</view>
+        <view wx:if="{{company.name==='自贡市城市规划设计研究院'}}" class="c-title">四川省国土空间规划协会副理事长单位</view>
+        <view wx:else class="c-bottom"></view>
       </view>
     </block>
   </view>
