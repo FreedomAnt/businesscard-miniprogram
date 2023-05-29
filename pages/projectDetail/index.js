@@ -23,17 +23,17 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow() {},
+  onShow() { },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {},
+  onShareAppMessage: function () { },
 
   /**
    * 用户点击右上角分享到朋友圈
    */
-  onShareTimeline: function () {},
+  onShareTimeline: function () { },
 
   getProjectInfo(id) {
     const _this = this;
@@ -54,6 +54,17 @@ Page({
           icon: "none",
         });
       }
+    });
+  },
+
+  /**
+   * 预览图片
+   * @param {event} e 点击事件
+   */
+  previewImage(e) {
+    wx.previewImage({
+      urls: this.data.project.pictures.map((item) => this.data.imgUrl + item),
+      current: e.currentTarget.dataset.url,
     });
   },
 });

@@ -5,7 +5,7 @@
   <swiper class="p-sw" wx:if="{{isLoad===1}}" indicator-dots indicator-active-color="#003086">
     <block wx:for="{{project.pictures}}" wx:key="pictures">
       <swiper-item>
-        <image src="{{imgUrl + item}}" style="width: 670rpx; height: 500rpx;" />
+        <image src="{{imgUrl + item}}" style="width: 670rpx; height: 500rpx;" mode="aspectFill" bindtap="previewImage" data-url="{{imgUrl + item}}" />
       </swiper-item>
     </block>
   </swiper>
