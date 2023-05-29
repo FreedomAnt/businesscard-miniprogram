@@ -19,7 +19,7 @@
       <view class="e-avatar">
         <image src="{{imgUrl + employee.avatar}}" />
       </view>
-      <view class="e-title">
+      <view class="e-title" wx:if="{{!!employee.title}}">
         <view class="e-title-icon">
           <image src="../../resources/images/icon_v.png" />
         </view>
