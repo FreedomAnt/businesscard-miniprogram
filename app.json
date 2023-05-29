@@ -1,6 +1,10 @@
 {
   "entryPagePath": "pages/home/index",
-  "pages": ["pages/home/index", "pages/projectDetail/index"],
+  "pages": [
+    "pages/home/index",
+    "pages/projectDetail/index",
+    "pages/website/index"
+  ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTextStyle": "black",

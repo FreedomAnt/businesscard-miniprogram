@@ -175,6 +175,28 @@ Page({
   },
 
   /**
+   * 跳转网页
+   */
+  toWeb() {
+    wx.navigateTo({
+      url: `/pages/website/index?url=${this.data.company.website}`,
+    });
+  },
+
+  /**
+   * 跳转地图
+   */
+  toMap() {
+    wx.openLocation({
+      latitude: 29.333552,
+      longitude: 104.835784,
+      scale: 18,
+      name: this.data.company.address,
+      address: "点击右侧按钮选择导航方案",
+    });
+  },
+
+  /**
    * 点击项目事件
    * @param {event} e 事件
    */

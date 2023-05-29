@@ -135,10 +135,12 @@
   height: 44rpx;
   background-color: #003086;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .employee .e-attr .e-attr-icon image {
-  margin: 10rpx;
   width: 24rpx;
   height: 24rpx;
 }

@@ -37,13 +37,13 @@
         <view class="e-attr-icon">
           <image src="../../resources/images/icon_url.png" />
         </view>
-        <view class="e-attr-txt">{{company.website}}</view>
+        <view class="e-attr-txt" bindtap="toWeb">{{company.website}}</view>
       </view>
       <view class="e-attr">
         <view class="e-attr-icon">
           <image src="../../resources/images/icon_address.png" />
         </view>
-        <view class="e-attr-txt">{{company.address}}</view>
+        <view class="e-attr-txt" bindtap="toMap">{{company.address}}</view>
       </view>
       <view class="company">
         <view class="c-line"></view>
