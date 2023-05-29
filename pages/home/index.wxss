@@ -167,18 +167,18 @@
   width: 640rpx;
   height: 40rpx;
   line-height: 40rpx;
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #666666;
 }
 
 .employee .company .c-title {
   margin-top: 10rpx;
   margin-bottom: 40rpx;
-  width: 436rpx;
+  width: 506rpx;
   height: 54rpx;
   line-height: 54rpx;
   text-align: center;
-  font-size: 24rpx;
+  font-size: 28rpx;
   border-radius: 12rpx;
   background-color: #ebebeb;
   color: #999999;

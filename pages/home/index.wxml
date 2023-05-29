@@ -6,9 +6,7 @@
     <van-sticky bind:scroll="onSticky">
       <view wx:if="{{isLogin===1}}" style="background-color: {{stickyBgColor}};">
         <view class="e-name">{{employee.name}}</view>
-        <view class="e-position">
-          {{department.name? department.name+'·' : ''}}{{employee.position}}
-        </view>
+        <view class="e-position">{{employee.position}}</view>
       </view>
     </van-sticky>
     <block wx:if="{{isLogin===1}}">

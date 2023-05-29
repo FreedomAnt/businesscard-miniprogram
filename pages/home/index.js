@@ -35,7 +35,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {},
+  onShow: function () { },
 
   /**
    * 用户点击右上角分享
@@ -52,7 +52,7 @@ Page({
   /**
    * 用户点击右上角分享到朋友圈
    */
-  onShareTimeline: function () {},
+  onShareTimeline: function () { },
 
   /**
    * 获取openid
@@ -276,7 +276,7 @@ Page({
       firstName: name,
       mobilePhoneNumber: phonenumber,
       organization: this.data.company.name,
-      title: this.data.department.name + "." + position,
+      title: position,
       email,
     });
   },
