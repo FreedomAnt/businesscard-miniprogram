@@ -54,7 +54,7 @@
   <block wx:if="{{isLogin===1}}">
     <view class="project">
       <view class="p-title1">RECOMMEND</view>
-      <view class="p-title2">推荐项目</view>
+      <view class="p-title2">{{department.name==='行政部'? '院介绍':'推荐项目'}}</view>
       <view class="p-sw">
         <block wx:for="{{projects}}" wx:key="id">
           <view class="p-sw-item" bindtap="clickProject" data-project="{{ item }}">

@@ -109,6 +109,7 @@
 .employee .e-title .e-title-icon {
   width: 55rpx;
   height: 55rpx;
+  flex-shrink: 0;
 }
 
 .employee .e-title .e-title-icon image {
@@ -135,6 +136,7 @@
   height: 44rpx;
   background-color: #003086;
   border-radius: 50%;
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +213,8 @@
 
 .project .p-sw {
   margin-top: 40rpx;
-  height: 580rpx;
+  padding-bottom: 40rpx;
+  /* height: 580rpx; */
   display: flex;
   overflow: scroll;
 }
@@ -222,7 +225,7 @@
 
 .project .p-sw .p-sw-item {
   margin-right: 30rpx;
-  height: 544rpx;
+  /* height: 544rpx; */
   border-radius: 16rpx;
   box-shadow: 0rpx 6rpx 10rpx 2rpx rgba(0, 0, 0, 0.1);
 }
@@ -232,7 +235,7 @@
 }
 
 .project .p-sw .p-sw-item .p-item-img {
-  width: 602rpx;
+  width: 600rpx;
   height: 448rpx;
   border-radius: 16rpx;
 }
@@ -246,14 +249,18 @@
 
 .project .p-sw .p-sw-item .p-item-txt {
   margin-left: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   width: 542rpx;
   color: #212121;
   font-size: 30rpx;
-  line-height: 96rpx;
+  line-height: 60rpx;
+  max-height: 120rpx;
+  overflow: hidden;
 }
 
 .tips {
-  margin-top: 50rpx;
+  margin-top: 10rpx;
   height: 34rpx;
   font-size: 24rpx;
   color: #999999;
