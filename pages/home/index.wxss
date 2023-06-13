@@ -321,9 +321,24 @@
   background-color: #f7f1f1;
 }
 
+.c-name-unlogin {
+  margin-top: -90rpx;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-name-unlogin .name {
+  margin-top: 200rpx;
+  height: 160rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+
 .businessButton {
-  width: 450rpx;
-  margin-left: 150rpx;
+  width: 300rpx;
 }
 
 .load-div {

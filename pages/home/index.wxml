@@ -1,5 +1,5 @@
 <view class="wrapper">
-  <view class="back-img" style="background-color:{{isLogin===1? '#003086':'transparent'}};">
+  <view class="back-img" style="background-color:{{isLogin !== 0? '#003086':'transparent'}};">
     <image src="../../resources/images/bgimg.png" mode="widthFix" />
   </view>
   <view class="employee">
@@ -90,9 +90,12 @@
     </view>
   </block>
   <block wx:elif="{{isLogin===2}}">
-    <van-button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" type="info" plain custom-class="businessButton">
-      获取名片
-    </van-button>
+    <view class="c-name-unlogin">
+      <view class="name">自贡市城市规划设计研究院</view>
+      <van-button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" type="info" plain custom-class="businessButton">
+        获取名片
+      </van-button>
+    </view>
   </block>
   <block wx:else>
     <van-loading color="#1989fa" size="24px" custom-class="load-div">加载中...</van-loading>
